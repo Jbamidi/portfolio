@@ -20,26 +20,26 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Jashwanth Bamidi",
+  title: "Hi, I'm Jashwanth",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "Electrical Engineering student at UIUC, building RISC-V CPU cores, EV telemetry and BMS systems, and hardware-heavy projects across FPGA, PCB design, and embedded systems."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1mWGwuUnqnXNeqSfjKYL51RNW4UByGS_r/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/Jbamidi",
+  linkedin: "https://www.linkedin.com/in/jashwanthbamidi",
+  gmail: "jassubamidi24@gmail.com",
+  gitlab: "",
+  facebook: "",
+  medium: "",
+  stackoverflow: "",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -49,14 +49,20 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle:
+    "Electrical engineering student focused on digital design, FPGA/CPU architecture, embedded systems, and EV power electronics.",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Design and implement RISC-V CPU cores in Verilog/SystemVerilog, moving from single-cycle designs toward pipelined architectures."
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Build and debug PCB-based systems for EV telemetry, motor encoders, Joule meters, buck converters, and BMS hardware."
+    ),
+    emoji(
+      "⚡ Develop embedded and low-level software in C/C++ for microcontrollers and hardware bring-up, backed by strong ECE fundamentals."
+    ),
+    emoji(
+      "⚡ Collaborate on multidisciplinary engineering teams (Eco Illini, Illini EV Concept, class projects) using Git-based workflows and clear documentation."
     )
   ],
 
@@ -65,56 +71,36 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
+      skillName: "Verilog / SystemVerilog",
+      fontAwesomeClassname: "fas fa-microchip"
     },
     {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
+      skillName: "C / C++",
+      fontAwesomeClassname: "fas fa-code"
     },
     {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
+      skillName: "Python",
       fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
+      skillName: "KiCad (PCB Design)",
+      fontAwesomeClassname: "fas fa-project-diagram"
+    },
+    {
+      skillName: "Embedded systems / MCU",
+      fontAwesomeClassname: "fas fa-microchip"
+    },
+    {
+      skillName: "FPGA / Digital Design",
+      fontAwesomeClassname: "fas fa-microchip"
+    },
+    {
+      skillName: "Git / GitHub",
+      fontAwesomeClassname: "fab fa-git-alt"
+    },
+    {
+      skillName: "React & JavaScript (for this site)",
+      fontAwesomeClassname: "fab fa-react"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -126,23 +112,15 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "University of Illinois Urbana-Champaign",
+      logo: require("./assets/images/IlliniLogo_cropped.jpg"), // replace with an Illinois logo image when you add one
+      subHeader: "Bachelor of Science in Electrical Engineering",
+      duration: "August 2024 - May 2027 (expected)",
+      desc: "GPA: 3.84/4.00",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Relevant Coursework: Digital Logic Design, Computer Systems, Electronic Circuits, Analog Signal Processing, Design Laboratory.",
+        "Combine coursework with hands-on CPU design, FPGA, and EV power/telemetry projects."
       ]
-    },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     }
   ]
 };
@@ -153,16 +131,16 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      Stack: "Digital design / RTL & FPGA",
+      progressPercentage: "80%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Backend",
+      Stack: "Embedded systems & PCB / power",
+      progressPercentage: "75%"
+    },
+    {
+      Stack: "Programming (C/C++/Python, tooling)",
       progressPercentage: "70%"
-    },
-    {
-      Stack: "Programming",
-      progressPercentage: "60%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -174,29 +152,42 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Battery Management System – PDU & Joule Meter Lead",
+      company: "Eco Illini",
+      companylogo: require("./assets/images/EcoIllini.jpg"), // swap to Eco Illini logo when available
+      date: "Aug 2025 – Present",
+      desc:
+        "Lead power distribution and Joule-meter PCB design for a high-efficiency electric vehicle BMS.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Led the Power Distribution Unit and Joule Meter PCB-design teams using KiCad, reducing prototype iteration cycles by 30%.",
+        "Designed and simulated DC-DC buck converters and LDO voltage regulators to supply stable 12 V and 3.3 V rails with less than 50 mV ripple.",
+        "Developed and validated current and voltage sensing circuits using INA228 and STM32 microcontrollers; achieved less than 1% measurement error verified via LTSpice simulations and oscilloscope testing."
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Motor Encoder Team Member",
+      company: "Illini EV Concept",
+      companylogo: require("./assets/images/IlliniEVConcept.png"), // swap to Illini EV Concept logo when available
+      date: "Aug 2024 – Present",
+      desc:
+        "Design and validation of motor encoder PCBs and feedback paths for a competition electric vehicle.",
+      descBullets: [
+        "Spearheaded the design and simulation of encoder PCBs using KiCad and LTSpice, achieving a 15% improvement in motor speed feedback accuracy.",
+        "Conducted full bring-up and validation with oscilloscopes, logic analyzers, and differential probes; resolved 5+ hardware bugs and reduced testing time by 40%."
+      ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Data Analyst Intern",
+      company: "Gateway Tax Services",
+      companylogo: require("./assets/images/GatewayTaxServices.jpg"), // swap to Gateway logo when available
+      date: "May 2023 – Aug 2023",
+      desc:
+        "Supported modernization of tax data workflows and reporting for a high-volume tax services firm.",
+      descBullets: [
+        "Processed and reorganized 10,000+ client tax records with Excel macros, reducing redundancy by 20% and improving report generation speed.",
+        "Built semi-automated workflows for client communications and data reporting, shortening turnaround time from 3 days to 1 day.",
+        "Collaborated with management to plan digital infrastructure upgrades projected to reduce manual data entry by 50%."
+      ]
     }
   ]
 };
@@ -205,36 +196,38 @@ const workExperiences = {
 To know how to get github key look at readme.md */
 
 const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
+  showGithubProfile: "true", // keep as string to match original
   display: true // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Projects",
+  subtitle:
+    "RISC-V CPU design and hardware-focused builds that show how I think about systems from circuits to architecture.",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/risc-v-open-source-processor.jpg"), // replace with your own image when you have one
+      projectName: "Pipelined RISC-V CPU Core",
+      projectDesc:
+        "Built a fully functional 5-stage pipelined RV32I CPU core (IF–ID–EX–MEM–WB) in SystemVerilog, achieving a 3.8× throughput improvement over a single-cycle baseline with data forwarding, hazard detection, and branch/JAL/JALR flush units.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+          name: "GitHub Repo",
+          url: "https://github.com/Jbamidi/RISC-V-CPU-Core-Pipelined" // replace with specific CPU repo URL when public
         }
-        //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/Hardware-Guitar-Tuner.png"), // replace with your own image when you have one
+      projectName: "Hardware Guitar Auto-Tuner",
+      projectDesc:
+        "Developed a fully analog auto-tuning system for guitar strings using op-amp gyrator circuits, high-Q band-pass filters, peak detection, comparators, and an H-bridge motor driver to automatically adjust tuning pegs with tuning accuracy within 2 Hz.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "Project Notes",
+          url: "https://drive.google.com/file/d/1ia0KOWbe21YFET0GUzXzy-fnWR_sM_kh/view?usp=sharing" // update with repo or write-up link if created
         }
       ]
     }
@@ -246,58 +239,33 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
+  title: emoji("Achievements and Highlights 🏆 "),
   subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
-
+    "ECE at UIUC, EV engineering leadership, and hardware projects that reflect my trajectory toward advanced CPU/SoC and embedded hardware roles.",
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "Electrical Engineering @ UIUC",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
-      footerLink: [
-        {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
-      ]
+        "Strong academic performance (GPA 3.84/4.00) combined with hands-on projects in CPU design, FPGA, EV systems, and applied electronics.",
+      image: require("./assets/images/ECEIllinois.png"),
+      imageAlt: "UIUC ECE",
+      footerLink: []
     },
     {
-      title: "Google Assistant Action",
+      title: "EV & BMS Engineering",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
-      footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
+        "Lead roles in Eco Illini and Illini EV Concept developing BMS, PDU, Joule meter, and motor encoder hardware for electric vehicles.",
+      image: require("./assets/images/BMSPic.png"),
+      imageAlt: "EV Hardware",
+      footerLink: []
     },
-
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
-      ]
+      title: "Industry Experience & Data Work",
+      subtitle:
+        "Gateway Tax Services internship, applying data analysis and automation to streamline workflows and improve efficiency.",
+      image: require("./assets/images/IndustryExperience.webp"),
+      imageAlt: "Industry",
+      footerLink: []
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -308,82 +276,56 @@ const achievementSection = {
 const blogSection = {
   title: "Blogs",
   subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
-  blogs: [
-    {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
-      description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
-    },
-    {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
-      description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
+    "I plan to write about hardware debugging, CPU design lessons, and embedded systems in the future.",
+  displayMediumBlogs: "false", // no Medium feed for now
+  blogs: [],
+  display: false // hide this section for now
 };
 
 // Talks Sections
 
 const talkSection = {
-  title: "TALKS",
+  title: "Talks",
   subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
+    "I enjoy sharing what I learn about hardware, embedded systems, and ECE when I get the chance."
   ),
-
-  talks: [
-    {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
+  talks: [],
+  display: false // hide this section for now
 };
 
 // Podcast Section
 
 const podcastSection = {
   title: emoji("Podcast 🎙️"),
-  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
-
+  subtitle: "Maybe one day. For now, I focus on building and learning.",
   // Please Provide with Your Podcast embeded Link
-  podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
-  ],
-  display: true // Set false to hide this section, defaults to true
+  podcast: [],
+  display: false // hide this section for now
 };
 
 // Resume Section
 const resumeSection = {
   title: "Resume",
-  subtitle: "Feel free to download my resume",
-
-  // Please Provide with Your Podcast embeded Link
+  subtitle: "You can also download my resume from the hero section above.",
   display: true // Set false to hide this section, defaults to true
 };
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+    "Interested in hardware, embedded systems, or CPU/SoC projects? My inbox is open.",
+  number: "805-268-4693",
+  email_address: "jassubamidi24@gmail.com"
 };
 
 // Twitter Section
 
 const twitterDetails = {
-  userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  userName: "", //Replace "twitter" with your twitter username without @
+  display: false // hide this section
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Open for opportunities: Yes
 
 export {
   illustration,
